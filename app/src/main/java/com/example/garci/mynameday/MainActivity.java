@@ -1,16 +1,19 @@
 package com.example.garci.mynameday;
-
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.app.Dialog;
 import android.view.View;
-import android.app.DatePickerDialog;
 import android.widget.DatePicker;
 import android.widget.TextView;
+
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 public class MainActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
     @Override
@@ -85,4 +88,9 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
             return new DatePickerDialog(getActivity(), (DatePickerDialog.OnDateSetListener) getActivity(), year, month, day);
         }
     }
+
+    public void displayRelatedCelebrities() {
+
+    }
+
 }

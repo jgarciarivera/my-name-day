@@ -32,4 +32,10 @@
         app:layout_constraintTop_toBottomOf="@+id/button_enter_birthdate"
         tools:layout_editor_absoluteX="8dp" />
 
+    <android.support.v7.widget.CardView
+        android:layout_width="369dp"
+        android:layout_height="97dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="105dp" />
+
 </android.support.constraint.ConstraintLayout>
