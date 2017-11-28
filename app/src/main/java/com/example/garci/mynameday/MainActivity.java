@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         setContentView(R.layout.activity_main);
     }
 
-    /* Function that displays datepicker window when button is clicked */
+    /* Function that displays datepicker dialog window when button is clicked */
     public void showDatePicker (View view) {
         DatePickerFragment fragment = new DatePickerFragment();
         fragment.show(getSupportFragmentManager(), "date");
