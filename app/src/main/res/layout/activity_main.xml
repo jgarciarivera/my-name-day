@@ -17,7 +17,7 @@
         android:text="ENTER BIRTHDATE"
         android:textSize="18dp"
         android:textColor="#9E9E9E"
-        android:onClick="datePicker"/>
+        android:onClick="showDatePicker"/>
 
     <TextView
         android:id="@+id/textview_birthdate_description"
@@ -28,7 +28,7 @@
         android:background="#FFFFFF"
         android:padding="8dp"
         android:textSize="18dp"
-        android:textColor="#757575"
+        android:textColor="#424242"
         app:layout_constraintTop_toBottomOf="@+id/button_enter_birthdate"
         tools:layout_editor_absoluteX="8dp" />
 
