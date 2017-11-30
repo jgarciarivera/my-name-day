@@ -79,7 +79,14 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
             dayOfTheWeek = "ERROR";
         }
         ((TextView) findViewById(R.id.textview_birthdate_description)).setText("You were born on a " + dayOfTheWeek + "!");
+        TextView weekdayView = MainActivity.this.findViewById(R.id.textview_birthdate_description);
+        weekdayView.setVisibility(View.VISIBLE);
+
         new ConnectToSite().execute(month, day);
+        TextView celebView = MainActivity.this.findViewById(R.id.celebrity_birthdate_matches);
+        celebView.setVisibility(View.VISIBLE);
+
+
     }
 
     public static class DatePickerFragment extends DialogFragment {
@@ -167,9 +174,9 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
             String listOfCelebrities = "";
             for (int i = 0; i < 4; i++) {
                 listOfCelebrities = listOfCelebrities + result[i];
-                listOfCelebrities = listOfCelebrities + "   ";
+                listOfCelebrities = listOfCelebrities + "\n";
             }
-            ((TextView) findViewById(R.id.celebrity_birthdate_matches)).setText(listOfCelebrities);
+            ((TextView) findViewById(R.id.celebrity_birthdate_matches)).setText("Celebrities Born On Your Birthday\n" + listOfCelebrities);
         }
 
     }
